@@ -1,4 +1,5 @@
 /* Variables */
+
 :root{
     /* Tipography */
     --font-sans:'DM Sans', sans-serif;
@@ -21,18 +22,24 @@
 }
 
 /* Resetting margin, padding and box sizing */
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 /* Rem and font control */
+
 html{
     font-size: 62.5%;
     font-family: "DM sans", sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 /* Sección de cabecera */
+
 header{
     position: relative;
     display: flex;
@@ -177,6 +184,21 @@ main{
     color: #757575;
 }
 
+/* Slider para tablas dentro de primer sección de main */
+
+.main-tables__slider{
+    display: flex;
+
+    height: 36rem;
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+}
+
+.main-tables-container{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
 /* Tablas dentro de primera sección de main */
 
 
@@ -403,7 +425,7 @@ main{
 .bitcoin-img-container{
     width: 100%;
     min-width: 32rem;
-    height: 50vh;
+    height: 60vh;
 
     background-image: url('../assets/img/bitcoinbaby2x.jpg');
     background-position: center;
@@ -419,4 +441,140 @@ main{
     text-align: center;
 
     color: var(--just-white);
+}
+
+/* Cuarta sección de main */
+
+.main-plans-container{
+    width: 100%;
+    min-width: 32rem;
+    padding-bottom: 7rem;
+
+    text-align: center;
+}
+.plans__tittle{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+.plans__tittle h2{
+    padding-top: 5rem;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+
+    color: var(--black);
+}
+.plans__tittle p{
+    padding-top: 3rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    color: #757575;
+}
+
+/* Tarjetas de cuarta sección de main */
+
+.plans-container__card{
+    position: relative;
+    
+    width: 70%;
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 5rem 3rem 0;
+    padding: 0 1.5rem;
+    border-radius: 1.5rem;
+
+    background-color: var(--just-white);
+    box-shadow: 0 .4rem .8rem rgba(89, 73, 30, 0.16);
+
+    scroll-snap-align: center;
+}
+
+.recommended{
+    position: absolute;
+    left: calc(50% - 6rem);
+    top: calc(-1.5rem);
+
+    width: 12rem;
+    height: 3.1rem;
+    border-radius: .8rem;
+    padding: .7rem;
+
+    font-size: 1.2rem;
+
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+}
+.plan-card__tittle{
+    padding-top: 3rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    color: var(--black);
+}
+.plan-card__price{
+    padding: .5rem 0;
+
+    font-size: 5.3rem;
+    font-weight: bold;
+
+    color: var(--black);
+}
+.plan-card__price span{
+    vertical-align: 2.5rem;
+
+    padding: .5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.plan-card__saving{
+    font-size: 1.2rem;
+
+    color: #757575;
+}
+.plan-card__ca{
+    width: 15rem;
+    height: 4.8rem;
+    margin-top: 2rem;
+    border: .2rem solid var(--bitcoin-orange);
+    border-radius: .4rem;
+
+    font-family: "DM sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    
+    color: var(--black);
+    background-color: var(--off-white);
+}
+.plan-card__ca span{
+    display: inline-block;
+    vertical-align: text-bottom;
+
+    width: 2rem;
+    height: 2rem;
+    
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    background-repeat: no-repeat;
+}
+.plan-card__ca--m{
+    margin-top: 3.6rem;
+}
+.plans-container__slider{
+    display: flex;
+
+    height: 31.6rem;
+
+    overflow-x: scroll;
+    overscroll-behavior: contain;
+    scroll-snap-type: x proximity;
 }
