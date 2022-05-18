@@ -287,3 +287,113 @@ main{
 .main-comission-table .comission-table__date{
     background-color: var(--soft-blue);
 }
+
+/* Segunda sección del main */
+
+.main-product-detail{
+    position: relative;
+
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    padding: 2rem 1rem;
+
+    background-color: var(--black);
+}
+.product-detail__patata-logo{
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 20px);
+
+    width: 4rem;
+    height: 2.5rem;
+
+    background-image: url('../assets/icons/batata.svg');
+}
+
+.product-detail__title{
+    width: 90%;
+    min-width: 28.8rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    text-align: center;
+}
+
+.product-detail__title h2{
+    margin-bottom: 2rem;
+
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+
+    color: var(--just-white);
+}
+
+.product-detail__title p{
+    margin-bottom: 2rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    color: #808080;
+}
+
+/* Tarjetas de segunda sección de main */
+
+.product-detail__card{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 40rem;
+    height: 15rem;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.16);
+
+    background-color: var(--warm-black);
+}
+
+.product-detail__card .icon-card{
+    display: inline-block;
+
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail__card .icon-card--clock{
+    background-image: url('../assets/icons/clock.svg');
+}
+.product-detail__card .icon-card--eye{
+    background-image: url('../assets/icons/eye.svg');
+}
+.product-detail__card .icon-card--dolar{
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+.product-detail__card .icon-card--circle{
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.product-card--title{
+    margin-bottom: 1.5rem;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+
+    color: var(--just-white);
+}
+.product-card--body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+
+    color: #808080;
+}
