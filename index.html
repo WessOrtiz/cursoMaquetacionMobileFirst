@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/smartM.css" media="(min-width: 350px)">
+    <link rel="stylesheet" href="./css/smartL.css" media="(min-width: 400px)">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 450px)">
+    <link rel="stylesheet" href="./css/tableM.css" media="(min-width: 583px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 785px)">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <!--Header-->
@@ -26,6 +31,7 @@
         </div>
     </header>
 
+    <!--Main/secciones-->
     <main>
         <!--Primera sección-->
         <section class="main-exchange-container">
@@ -195,7 +201,7 @@
                         <h3 class="plan-card__tittle">Mensual</h3>
                         <p class="plan-card__price"><span>$</span>228</p>
                         <p class="plan-card__saving">* Acceso a toda la plataforma</p>
-                        <button class="plan-card__ca plan-card__ca--m">Escoger este <span></span></button>
+                        <button class="plan-card__ca">Escoger este <span></span></button>
                     </div>
                 </article>
 
@@ -203,7 +209,19 @@
 
         </section>
     </main>
-    
-    <footer></footer>
+
+    <!--Footer-->
+    <footer>
+        <section>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Crunchbase</a></li>
+                <li><a href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section>
+            <img src="./assets/img/logo-footer.svg" alt="Logo de Batabit 2020">
+        </section>
+    </footer>
 </body>
 </html>

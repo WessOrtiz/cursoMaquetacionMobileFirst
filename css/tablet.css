@@ -1,0 +1,11 @@
+.main-tables__slider{
+    display: flex;
+    justify-content: center;
+
+    overflow-x: inherit;
+}
+
+.main-tables-container{
+    margin-left: 0;
+    margin-right: 0;
+}
